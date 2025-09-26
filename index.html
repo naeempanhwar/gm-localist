@@ -5,65 +5,154 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GM Localist</title>
-<link rel="stylesheet" href="style.css">
 
-<link href="./dist/output.css" rel="stylesheet">
-
+  <!-- Tailwind  -->
+  <link href="./dist/output.css" rel="stylesheet" />
 </head>
 
 <body>
+  <!-- Header -->
   <header>
-    <div class="container mx-auto border">
-      <div class="flex items-center justify-between">
-        <div class="logo-wrapper">
-          <img src="./assets/images/logo.svg" alt="Logo" />
-        </div>
 
-        <nav>
-          <ul class="flex items-center justify-center gap-8">
-            <li><a href="">Home</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
-        </nav>
-
-        <a class="btn btn-primary mt-4" href="#">Book Now</a>
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="logo-wrapper h-[30px]">
+        <img src="./dist/images/logo.svg" alt="Logo" class="" />
       </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="flex items-center gap-8 font-medium">
+          <li><a href="#" class="text-[#4F4F4F] text-[18px] font-[Mada;] h-[12px]">Home</a></li>
+          <li><a href="#" class="text-[#4F4F4F] text-[18px] font-[Mada;] h-[12px]">Services</a></li>
+          <li><a href="#" class="text-[#4F4F4F] text-[18px] font-[Mada;] h-[12px]">Blog</a></li>
+          <li><a href="#" class="text-[#4F4F4F] text-[18px] font-[Mada;] h-[12px]">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Button -->
+
+      <a class="btn btn-primary" href="#">Book Now</a>
     </div>
   </header>
 
-  <section class="container mx-auto bg-white">
-    <div class="flex justify-center items-center">
-      <div class="flex justify-center w-1/2">
-        <div>
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Get Found Locally, Dominate <br> Google Maps in <br> 30 Days!
-          </h1>
+  <!-- Hero Section -->
 
-          <p class="bg-yellow-500 p-5 mb-20">
-            Attract more customers and increase your visibility with expert Google My Business optimization.
-          </p>
-          <div class="mt-8">
-            <a href="#" class="btn btn-primary">Book Now</a>
+  <section class="container mx-auto px-6 py-16 ">
+    <div class="flex flex-col lg:flex-row items-center gap-10">
+      <!-- Left Content -->
+      <div class="w-1/2">
+        <h1 class="h1">
+          Get Found Locally, <br />
+          Dominate <br />
+          Google Maps in <br />
+          30 Days!
+        </h1>
+
+        <p class="peragraph mt-10 ">
+          Attract more customers and increase your visibility with <br />
+          expert Google My Business optimization.
+        </p>
+
+        <div class="mt-10">
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+
+      <div class="w-1/2 flex flex-col items-center gap-6">
+        <!-- Small Stat Card -->
+
+        <div class="flex items-center gap-3 p-4 btn-2 ">
+          <img src="/dist/images/icons.png" alt="Icon" class="" />
+          <div>
+            <span class="color-blue">97%</span>
+            <p class="peragraph">
+              Users find local businesses online
+            </p>
           </div>
         </div>
+
+        <!-- Main Image -->
+
+        <img src="/dist/images/Screens Map Mockups 2.svg" alt="" />
+
+        <!-- Bottom  Card -->
+
+        <div class="flex items-center gap-3 p-4 btn-2">
+          <img src="/dist/images/icons.png" alt="Icon" class="" />
+
+          <p">
+            Complete Listings are <span class="color-blue"> 7x </span> More Likely
+            <br>to Get Clicks
+            Than Those Left Unfinished
+            </p>
+        </div>
       </div>
 
-      <div class="w-1/2 flex-col justify-center items-center pt-20 relative">
-        <div class="btn-2 flex flex-col justify-center items-center mb-6">
-          <span>97%</span>
-          <p>Users find local businesses online</p>
-        </div>
-
-        <img class="w-[631px]" src="assets/images/Screens Map Mockups 1.png" alt="Map Mockup">
-
-        <div
-          class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-white shadow-lg rounded-xl px-5 py-3 text-sm text-gray-700">
-          Complete Listings are <span>7x</span> More Likely to Get Clicks
-        </div>
-      </div>
     </div>
+
+    <!-- Stats Section -->
+    <!-- Stat 1 -->
+
+    <div class="flex items-center pt-16 gap-10 justify-between">
+
+      <div class="flex -space-x-4 overflow-hidden">
+        <img class="inline-block h-[88px] w-[88px] rounded-full ring-2 ring-white" src="/dist/images/image4.svg"
+          alt="Profile picture 1">
+        <img class="inline-block h-[88px] w-[88px] rounded-full ring-2 ring-white" src="/dist/images/image2.svg"
+          alt="Profile picture 2">
+        <img class="inline-block h-[88px] w-[88px] rounded-full ring-2 ring-white" src="/dist/images/image3.svg"
+          alt="Profile picture 3">
+        <img class="inline-block h-[88px] w-[88px] rounded-full ring-2 ring-white" src="/dist/images/image1.svg"
+          alt="Profile picture 4">
+      </div>
+
+      <div>
+        <span class="color-blue"> 154K</span>
+        <p>A job career refers to the long- <br>term professional jour </p>
+
+      </div>
+
+      <div class="flex items-center space-x-4  p-6 rounded-full border border-gray-200 max-w-sm">
+        <span class="color-blue">
+          10+
+        </span>
+        <div>
+          <div class="text-primpary">Development and</div>
+          <div class="text-primpary">Design awards</div>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-4  p-6 rounded-full  border border-gray-200  max-w-sm">
+        <div class="color-blue">
+          300
+        </div>
+        <div>
+          <div class="text-primpary">Development and</div>
+          <div class="text-primpary">Design awards</div>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-4  p-6 rounded-full  border border-gray-200 max-w-sm">
+        <div class="color-blue">
+          <img src="/dist/images/Star 1.svg" alt="">
+        </div>
+        <div>
+          <div class="text-base font-semibold text-gray-800">4.9/5 Success</div>
+          <div class="text-primpary">Rated by Clients</div>
+        </div>
+      </div>
+
+    </div>
+
+
+
   </section>
+
+
+
 </body>
+
 </html>
